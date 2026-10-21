@@ -46,9 +46,16 @@
     const btn = qs("#player-btn");
     const label = qs("#musicLabel");
 
-    let isOpen = true
+    let isOpen = true;
 
     if (!audio || !icon || !btn || !label) return;
+
+    const tryPlayAudio = () => {
+      if (!audio.src || !audio.paused) return;
+      audio.play().catch(() => {
+        // Browser blocks autoplay outside a user gesture; ignore here
+      });
+    };
 
     // 👉 GSAP timeline cho label
     const tl = gsap.timeline({ paused: true });
@@ -59,6 +66,10 @@
       duration: 1,
       ease: "power2.inOut",
       pointerEvents: "none"
+    });
+
+    document.addEventListener("langchange", () => {
+      tryPlayAudio();
     });
 
     btn.addEventListener("click", () => {

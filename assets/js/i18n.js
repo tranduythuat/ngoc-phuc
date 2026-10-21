@@ -68,7 +68,7 @@
       "invitation.venueName": "The Myst Đong Khoi",
       "invitation.venueAddress":
         '6–8 Ho Huan Nghiep Street, Sai Gon Ward, Ho Chi Minh City',
-      "invitation.mapButton": 'CLICK ĐỂ XEM BẢN ĐỒ',
+      "invitation.mapButton": 'CLICK TO VIEW MAP',
 
       "timeline.item1": 'Welcome',
       "timeline.item2": 'Làm lễ',

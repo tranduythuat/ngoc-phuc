@@ -3,6 +3,7 @@
 
 .rsvp {
     width: 100%;
+
     .content {
         width: 100%;
         perspective: 1000px;
@@ -11,13 +12,15 @@
 
         .rsvp-form {
             display: block;
-            padding: 0 8%;
+            padding: 0 7%;
+
             .header {
                 .title {
                     font-size: 29px;
                     font-family: $font-lora;
                     line-height: .8;
                     margin-bottom: 5%;
+
                     i {
                         text-transform: unset;
                         font-family: $font-lora;
@@ -63,6 +66,7 @@
                     text-align: center;
                     border: solid 2px $text-color;
                     font-family: $font-SVG-gotham;
+
                     &:hover {
                         background: $text-color;
                         color: white;
@@ -149,20 +153,23 @@
 
                 &.confirm-related {
                     margin: 8% 0;
+
                     .button-group {
-                        grid-template-columns: auto auto auto;
+                        grid-template-columns: auto auto;
+
                         .radio-label {
                             display: block;
-                            padding: 6% 0;
+                            padding: 3% 0;
                             height: 100%;
                             line-height: 1.2;
                         }
                     }
-                }  
-                
+                }
+
                 &.guests-number {
                     .button-group.first {
                         grid-template-columns: auto;
+
                         .radio-label {
                             padding: 1.8% 0;
                             height: 100%;
@@ -172,15 +179,16 @@
 
                     .button-group.second {
                         grid-template-columns: auto auto auto;
+
                         .radio-label {
                             padding: 4% 0;
                             height: 100%;
                             line-height: 1.2;
                         }
                     }
-                }  
+                }
 
-               
+
             }
 
             .submit-btn {
@@ -198,12 +206,12 @@
                 transition: background 0.3s ease;
                 margin: 1% 0 6%;
             }
-    
+
             .submit-btn:hover {
                 background: rgb(41, 51, 36);
                 opacity: 0.9;
             }
-    
+
             .submit-btn:active {
                 transform: scale(0.98);
             }
@@ -216,29 +224,31 @@
                 .header {
                     .title {
                         font-size: calc((29 / 525) * 100vw);
+
                         i {
                             font-size: calc((22 / 525) * 100vw);
                         }
                     }
-    
+
                     .subtitle {
                         font-size: calc((16 / 525) * 100vw);
                     }
                 }
-    
+
                 .form-group {
                     font-size: calc((10 / 525) * 100vw);
+
                     input[type="text"],
                     input[type="number"],
                     textarea {
                         font-size: calc((12 / 525) * 100vw);
                     }
-    
+
                     .subtitle {
                         font-size: calc((12 / 525) * 100vw);
                     }
                 }
-    
+
                 .submit-btn {
                     font-size: calc((12 / 525) * 100vw);
                 }

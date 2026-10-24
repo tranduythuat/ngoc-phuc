@@ -104,6 +104,7 @@ section {
   bottom: 10px;
   right: 1%;
   cursor: pointer;
+  z-index: 1000;
 }
 .music-box .label {
   display: flex;
@@ -365,6 +366,7 @@ section {
   font-size: 15px;
   line-height: 2;
   margin-bottom: 2%;
+  text-transform: uppercase;
 }
 .invitation .content .message .text span {
   font-weight: bold;
@@ -550,6 +552,7 @@ section {
 .timeline .items .item {
   font-size: 11px;
   position: absolute;
+  width: 80px;
 }
 .timeline .items .item .icon {
   display: flex;
@@ -591,28 +594,32 @@ section {
   font-family: "Lora", sans-serif;
   text-align: left;
   margin-top: 5%;
+  text-align: center;
 }
 .timeline .items .item .label i {
   font-size: 12px;
 }
 .timeline .items .item:nth-of-type(1) {
-  top: 10%;
-  left: 30%;
+  top: 9.5%;
+  left: 28%;
+}
+.timeline .items .item:nth-of-type(1) .icon img {
+  max-width: 54px;
 }
 .timeline .items .item:nth-of-type(2) {
-  top: 26%;
-  right: 31%;
+  top: 25.5%;
+  right: 27%;
 }
 .timeline .items .item:nth-of-type(3) {
   top: 42%;
-  left: 31%;
+  left: 28%;
 }
 .timeline .items .item:nth-of-type(3) .icon img {
-  max-width: 34px;
+  max-width: 44px;
 }
 .timeline .items .item:nth-of-type(4) {
   top: 58%;
-  right: 31%;
+  right: 27%;
 }
 .timeline .items .item:nth-of-type(5) {
   top: 75%;
@@ -626,6 +633,7 @@ section {
   font-style: italic;
   font-size: 11px;
   margin-top: 2%;
+  padding: 0 10%;
 }
 .timeline .subtext span {
   font-family: "SVG-GothamBold", sans-serif;
@@ -693,6 +701,9 @@ section {
   }
   .timeline .items .item .label i {
     font-size: 2.2857142857vw;
+  }
+  .timeline .items .item:nth-of-type(1) .icon img {
+    max-width: 8.380952381vw;
   }
   .timeline .items .item:nth-of-type(3) .icon img {
     max-width: 6.4761904762vw;
@@ -820,7 +831,7 @@ section {
 }
 .rsvp .content .rsvp-form {
   display: block;
-  padding: 0 8%;
+  padding: 0 7%;
 }
 .rsvp .content .rsvp-form .header .title {
   font-size: 29px;
@@ -945,11 +956,11 @@ section {
   margin: 8% 0;
 }
 .rsvp .content .rsvp-form .form-group.confirm-related .button-group {
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
 }
 .rsvp .content .rsvp-form .form-group.confirm-related .button-group .radio-label {
   display: block;
-  padding: 6% 0;
+  padding: 3% 0;
   height: 100%;
   line-height: 1.2;
 }

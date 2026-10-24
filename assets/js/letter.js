@@ -209,49 +209,7 @@
   }
 
   function initAnimations() {
-    const animationMap = {
-      flip: gsapFlipIn,
-      "flip-yoyo": gsapFlipInThenYoyo,
-
-      "fade-in": gsapFadeIn,
-      "fade-in-end": gsapFadeInForEnd,
-      "fade-in-yoyo": gsapFadeInThenYoyo,
-      "fade-in-pulse": gsapFadeInThenPulse,
-
-      "fade-right": gsapFadeRight,
-      "fade-left": gsapFadeLeft,
-      "fade-up": gsapFadeUp,
-      "fade-down": gsapFadeDown,
-
-      "rotate-bl": gsapRotateBottomLeft,
-      "rotate-br": gsapRotateBottomRight,
-      "rotate-bl-yoyo": gsapRotateBottomLeftThenYoyo,
-      "rotate-br-yoyo": gsapRotateBottomRightThenYoyo,
-
-      "flip-vertical-left": gsapFlipVerticalLeft,
-      "flip-vertical-bottom": gsapFlipVerticalBottom,
-
-      "roll-in-left": gsapRollInLeft,
-      "rotate-bl--float": gsap_rotate_bl__float,
-    };
-
-    document.querySelectorAll("[data-animate]").forEach((el) => {
-      const type = el.dataset.animate;
-      const fn = animationMap[type];
-
-      if (!fn) {
-        console.warn(`Animation "${type}" not found.`);
-        return;
-      }
-
-      const options = {
-        delay: parseFloat(el.dataset.animateDelay) || 0,
-        duration: parseFloat(el.dataset.animateDuration) || 1,
-        scrollStart: el.dataset.animateScrollStart || "top 85%",
-      };
-
-      fn(el, options);
-    });
+    // Disabled: animation hooks were removed.
   }
 
   /* ======================================================

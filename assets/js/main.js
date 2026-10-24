@@ -579,14 +579,15 @@
         errorServer: "OPPS! Không tìm thấy server",
         errorRetry: "Thử lại",
       },
-      zh: {
-        sendingTitle: "正在提交...",
-        sendingText: "请稍候",
-        successTitle: "提交成功！",
-        successText: "感谢您的回复。您的确认信息已成功发送给新郎和新娘。",
-        errorTitle: "发生错误！",
-        errorServer: "哎呀！无法连接到服务器。",
-        errorRetry: "重试",
+      en: {
+        sendingTitle: "Sending...",
+        sendingText: "Please wait a moment",
+        successTitle: "Success!",
+        successText:
+          "Thank you for your RSVP! Your response has been sent to the bride and groom.",
+        errorTitle: "Oops!",
+        errorServer: "Oops! Server not found.",
+        errorRetry: "Try Again",
       },
     };
 
@@ -603,7 +604,7 @@
       didOpen: () => Swal.showLoading(),
     });
 
-    const sheetURL = "https://script.google.com/macros/s/AKfycbxSnE3OG10zFSnYrlSt6bd0CBa16rwHn0iUDQ1TEyzD7okRuG6zGyocMJS_DgaXAj8f/exec/exec?sheet=confirm";
+    const sheetURL = "?sheet=confirm";
 
     try {
       const res = await fetch(sheetURL, {
@@ -666,50 +667,7 @@
   }
 
   function initAnimations() {
-    const animationMap = {
-      "flip": gsapFlipIn,
-      "flip-yoyo": gsapFlipInThenYoyo,
-
-      "fade-in": gsapFadeIn,
-      "fade-in-end": gsapFadeInForEnd,
-      "fade-in-yoyo": gsapFadeInThenYoyo,
-      "fade-in-pulse": gsapFadeInThenPulse,
-
-      "fade-right": gsapFadeRight,
-      "fade-left": gsapFadeLeft,
-      "fade-up": gsapFadeUp,
-      "fade-down": gsapFadeDown,
-
-      "rotate-bl": gsapRotateBottomLeft,
-      "rotate-br": gsapRotateBottomRight,
-      "rotate-bl-yoyo": gsapRotateBottomLeftThenYoyo,
-      "rotate-br-yoyo": gsapRotateBottomRightThenYoyo,
-
-      "flip-vertical-left": gsapFlipVerticalLeft,
-      "flip-vertical-bottom": gsapFlipVerticalBottom,
-
-      "roll-in-left": gsapRollInLeft,
-      "roll-in-right": gsapRollInRight,
-      "rotate-bl--float": gsap_rotate_bl__float,
-    };
-
-    document.querySelectorAll("[data-animate]").forEach((el) => {
-      const type = el.dataset.animate;
-      const fn = animationMap[type];
-
-      if (!fn) {
-        console.warn(`Animation "${type}" not found.`);
-        return;
-      }
-
-      const options = {
-        delay: parseFloat(el.dataset.animateDelay) || 0,
-        duration: parseFloat(el.dataset.animateDuration) || 1,
-        scrollStart: el.dataset.animateScrollStart || "top 85%",
-      };
-
-      fn(el, options);
-    });
+    // Disabled: animation hooks were removed.
   }
 
   /* ======================================================

@@ -194,6 +194,7 @@
 
         .items {
             .item {
+                width: calc((80 / 525) * 100vw);
                 font-size: calc((11 / 525) * 100vw);
 
                 .icon {

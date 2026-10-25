@@ -13,7 +13,7 @@
   var translations = {
     vi: {
       "invitation.message":
-        'TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH<br />ĐẾN DỰ BỮA CƠM THÂN MẬT MỪNG<strong>LỄ CƯỚI</strong> CỦA',
+        'TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH<br />ĐẾN DỰ BỮA CƠM THÂN MẬT MỪNG <strong>LỄ CƯỚI</strong> CỦA',
       "invitation.groom_name": 'Đình Phúc',
       "invitation.bride_name": 'Bích Ngọc',
       "invitation.timeLabel": 'VÀO LÚC <strong>18H00</strong>',

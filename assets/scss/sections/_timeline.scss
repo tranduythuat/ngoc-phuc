@@ -51,9 +51,10 @@
             .time {
                 letter-spacing: 1px;
                 @include flex-center;
-                max-width: 75px;
+                // max-width: 75px;
                 width: 100%;
                 font-weight: 600;
+                text-align: center;
 
                 span {
                     font-family: $font-DFVNCatchyMager;
@@ -195,6 +196,7 @@
         .items {
             .item {
                 font-size: calc((11 / 525) * 100vw);
+                width: calc((80 / 525) * 100vw);
 
                 .icon {
                     img {
@@ -203,7 +205,7 @@
                 }
 
                 .time {
-                    max-width: calc((75 / 525) * 100vw);
+                    // max-width: calc((75 / 525) * 100vw);
 
                     span {
                         border-radius: calc((5 / 525) * 100vw);
@@ -218,13 +220,13 @@
 
                 &:nth-of-type(1) {
                     .icon img {
-                        max-width: calc((44 / 525) * 100vw);
+                        max-width: calc((54 / 525) * 100vw);
                     }
                 }
 
                 &:nth-of-type(3) {
                     .icon img {
-                        max-width: calc((34 / 525) * 100vw);
+                        max-width: calc((44 / 525) * 100vw);
                     }
                 }
 

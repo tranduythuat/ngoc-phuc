@@ -62,8 +62,13 @@
 
     <section class="invitation">
       <div class="content">
-        <div class="section-header">
+        <!-- <div class="section-header">
           We do.
+        </div> -->
+
+        <div class="parent-info">
+          <p>Nhà Trai: Ông Trần Đình Thái - Bà Trần Thị Minh Tuyết</p>
+          <p>Nhà Gái: Ông Nguyễn Văn Dũng - Bà Từ Thị Hằng</p>
         </div>
 
         <div class="message">
@@ -83,6 +88,13 @@
           <img src="assets/images/divider.png" alt="Bow Icon" />
         </div>
 
+        <div class="gallery">
+          <div class="content">
+            <div class="image1 main"></div>
+            <div class="image2 main"></div>
+          </div>
+        </div>
+
         <div class="event-time">
           <p class="time-label" data-i18n="invitation.timeLabel">VÀO LÚC <strong>18H00</strong></p>
 
@@ -91,34 +103,15 @@
             <span class="date-divider">|</span>
             <span class="date" data-i18n="invitation.date">02.01.2027</span>
           </div>
-          <!-- <div class="lunar-date" data-i18n="invitation.lunar_date">(Nhằm ngày 25 tháng 11 năm Bính Ngọ)</div> -->
+          <div class="lunar-date" data-i18n="invitation.lunar_date">(Nhằm ngày 25 tháng 11 năm Bính Ngọ)</div>
+
         </div>
 
-        <div class="event-location">
-          <div class="venue-name" data-i18n="invitation.venueName">The Myst Đồng Khởi</div>
 
-          <p class="venue-address" data-i18n="invitation.venueAddress">
-            6–8 Hồ Huấn Nghiệp, Phường Sài Gòn, Thành phố Hồ Chí Minh
-          </p>
-        </div>
-
-        <div class="location-map">
-          <img src="assets/images/map.png" alt="Wedding Location Map" />
-        </div>
-
-        <a target="_blank"
-          href="https://www.google.com/maps/place/the+myst+dong+khoi/data=!4m2!3m1!1s0x31752f4684997457:0xd95dc595a2313834?sa=X&ved=1t:242&ictx=111"
-          class="map-button" data-i18n="invitation.mapButton"> CLICK
-          ĐỂ XEM BẢN ĐỒ </a>
       </div>
     </section>
 
-    <div class="gallery">
-      <div class="content">
-        <div class="image1 main"></div>
-        <div class="image2 main"></div>
-      </div>
-    </div>
+
 
     <!-- timeline -->
     <section class="timeline">
@@ -210,6 +203,26 @@
       </div>
     </section>
 
+
+    <div class="map-box" id="map-section">
+      <div class="event-location">
+        <div class="venue-name" data-i18n="invitation.venueName">The Myst Đồng Khởi</div>
+
+        <p class="venue-address" data-i18n="invitation.venueAddress">
+          6–8 Hồ Huấn Nghiệp, Phường Sài Gòn, Thành phố Hồ Chí Minh
+        </p>
+      </div>
+
+      <div class="location-map">
+        <img src="assets/images/map.png" alt="Wedding Location Map" />
+      </div>
+
+      <a target="_blank"
+        href="https://www.google.com/maps/place/the+myst+dong+khoi/data=!4m2!3m1!1s0x31752f4684997457:0xd95dc595a2313834?sa=X&ved=1t:242&ictx=111"
+        class="map-button" data-i18n="invitation.mapButton"> CLICK
+        ĐỂ XEM BẢN ĐỒ </a>
+    </div>
+
     <!-- <section class="love-story">
       <div class="content">
         <h2 class="title">Love story</h2>
@@ -263,7 +276,7 @@
       </div>
     </section> -->
 
-    <section class="rsvp">
+    <section class="rsvp" id="rsvp-section">
       <div class="content">
         <form id="rsvpForm" class="rsvp-form">
           <div class="header">
@@ -332,15 +345,60 @@
           </div>
 
 
-          <div class="form-group  regular_menu">
+          <!-- <div class="form-group  regular_menu">
             <input type="text" id="regular-menu" name="regular_menu" placeholder="Số lượng khách dùng tiệc mặn"
               data-i18n-placeholder="rsvp.regular_menu" required />
+          </div> -->
+
+          <div class="form-group guests-number" data-animate="fade-right"
+            style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+            <select class="form-select" name="guests_number" data-lang="vi">
+              <option value="" disabled="" selected="" data-i18n="rsvp.guests_number">
+                Số lượng người tham dự
+              </option>
+              <!-- <option value="Đi một mình">Đi một mình</option> -->
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
           </div>
 
-          <div class="form-group vegetarian-menu">
+          <div class="form-group regular-menu" data-animate="fade-right"
+            style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+            <select class="form-select" name="regular_menu" data-lang="vi">
+              <option value="" disabled="" selected="" data-i18n="rsvp.regular_menu">
+                Số lượng khách dùng tiệc mặn
+              </option>
+              <!-- <option value="Đi một mình">Đi một mình</option> -->
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+
+          <div class="form-group vegetarian-menu" data-animate="fade-right"
+            style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+            <select class="form-select" name="vegetarian_menu" data-lang="vi">
+              <option value="" disabled="" selected="" data-i18n="rsvp.vegetarian_menu">
+                Số lượng khách dùng tiệc mặn
+              </option>
+              <!-- <option value="Đi một mình">Đi một mình</option> -->
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+
+          <!-- <div class="form-group vegetarian-menu">
             <input type="text" id="vegetarian-menu" name="vegetarian_menu" placeholder="Số lượng khách dùng tiệc chay"
               data-i18n-placeholder="rsvp.vegetarian_menu" required />
-          </div>
+          </div> -->
 
           <!-- <div class="form-group related">
             <p class="subtitle" data-i18n="rsvp.related_subtitle">
@@ -362,27 +420,6 @@
             </div>
           </div> -->
 
-
-          <!-- <div class="form-group guest-number">
-              <div class="label">
-                Số khách mời tham dự <br />
-                <i>/How many people are you bringing?/</i>
-              </div>
-              <input
-                type="text"
-                id="attendance"
-                name="guest_number"
-                placeholder=""
-              />
-            </div> -->
-
-          <!-- <div class="form-group">
-              <textarea
-                id="guest-names"
-                name="guests_names"
-                placeholder="TÊN KHÁCH MỜI ĐI CÙNG BẠN - WHAT ARE YOUR GUESTS NAMES?"
-              ></textarea>
-            </div> -->
 
           <!-- <div class="form-group guests-number">
             <p class="subtitle" data-i18n="rsvp.guestsSubtitle">
@@ -504,12 +541,23 @@
       </div>
     </section>
 
-    <div class="music-box">
-      <div class="label">
-        <div id="musicLabel" class="musicLabel">Turn the</br> Music on</div>
+    <div class="music-box-wrapper">
+      <div class="music-box">
+        <div class="label">
+          <div id="musicLabel" class="musicLabel">Turn the</br> Music on</div>
+        </div>
+        <div class="player" id="player-btn" aria-label="Play/Pause">
+          <img id="iconSvg" src="assets/images/cd.png" alt="Music Icon" />
+        </div>
       </div>
-      <div class="player" id="player-btn" aria-label="Play/Pause">
-        <img id="iconSvg" src="assets/images/cd.png" alt="Music Icon" />
+
+      <div class="quick-actions" aria-label="Quick access buttons">
+        <button type="button" class="quick-action" data-scroll-target="#map-section" aria-label="Go to map section">
+          Map
+        </button>
+        <button type="button" class="quick-action" data-scroll-target="#rsvp-section" aria-label="Go to RSVP section">
+          RSVP
+        </button>
       </div>
     </div>
     <audio id="audio" preload="auto"

@@ -90,18 +90,17 @@
   right: 16px;
   top: 16px;
   z-index: 999;
-  min-width: 46px;
-  height: 46px;
-  padding: 0 14px;
-  border-radius: 999px;
-  border: 1.5px solid #231f20;
+  max-width: 110px;
+  width: 100%;
+  aspect-ratio: 10 / 3;
+  border-radius: 55px;
+  border: 1.5px solid #231f205b;
   background: #f8f3eb;
   color: #231f20;
   font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.5px;
   cursor: pointer;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
   transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease;
   font-family: "SVG-gotham-book", sans-serif;
 }
@@ -119,9 +118,13 @@
   .lang-popup {
     padding: 26px 20px;
   }
+}
 
+@media (max-width: 525px) {
   .lang-switcher {
-    right: 12px;
-    bottom: 12px;
+    right: 3%;
+    top: 1%;
+    max-width: calc((110 / 525) * 100vw);
+    font-size: calc((13 / 525) * 100vw);
   }
 }

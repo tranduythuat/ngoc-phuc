@@ -8,7 +8,7 @@
         width: 100%;
         perspective: 1000px;
         position: relative;
-        // padding: 12% 0 0%;
+        padding: 10% 0 0%;
 
         .rsvp-form {
             display: block;
@@ -188,6 +188,30 @@
                     }
                 }
 
+                .form-select {
+                    width: 100%;
+                    padding: 2% 4%;
+                    line-height: 1.5;
+                    border-radius: 10px;
+                    background: transparent;
+                    font-size: 11px;
+                    color: $text-color;
+                    outline: none;
+                    border: 2px solid $text-color;
+                    transition: border-color 0.3s ease;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    background-image: url("../../assets/images/icons/chevron_icon.png");
+                    background-repeat: no-repeat;
+                    background-position: right 10px center;
+                    background-size: 9px;
+                    padding-right: 45px;
+                    cursor: pointer;
+                    background-color: transparent;
+                    text-transform: uppercase;
+                }
+
 
             }
 
@@ -246,6 +270,12 @@
 
                     .subtitle {
                         font-size: calc((12 / 525) * 100vw);
+                    }
+
+                    .form-select {
+                        border-radius: calc((10 / 525) * 100vw);
+                        font-size: calc((11 / 525) * 100vw);
+                        background-size: calc((9 / 525) * 100vw);
                     }
                 }
 

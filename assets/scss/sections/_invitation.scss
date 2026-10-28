@@ -13,12 +13,20 @@
             margin: 10% 0 5%;
         }
 
+        .parent-info {
+            font-family: $font-SVG-gotham-book;
+            font-size: 13px;
+            text-transform: uppercase;
+            line-height: 1.5;
+            margin: 10% 0;
+        }
+
         .message {
             .text {
                 font-family: $font-SVG-gotham-book;
                 line-height: 1.5;
                 font-size: 15px;
-                line-height: 2;
+                line-height: 1.5;
                 margin-bottom: 2%;
                 text-transform: uppercase;
 
@@ -36,7 +44,7 @@
         }
 
         .divider-icon {
-            margin: 8% 0;
+            margin: 8% 0 0%;
 
             img {
                 width: 100%;
@@ -76,52 +84,6 @@
             }
         }
 
-        .event-location {
-            .venue-name {
-                font-family: $font-lora;
-                font-size: 37px;
-                text-transform: uppercase;
-            }
-
-            .venue-address {
-                font-family: $font-SVG-gotham-book;
-                font-size: 11px;
-                // margin-top: 2%;
-            }
-        }
-
-        .location-map {
-            width: 100%;
-            margin: 10% 0;
-
-            img {
-                max-width: 373px;
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        .map-button {
-            display: block;
-            font-size: 13px;
-            text-decoration: none;
-            color: #fff;
-            background-color: $text-color;
-            max-width: 329px;
-            width: 100%;
-            aspect-ratio: 329 / 31;
-            @include flex-center;
-            border-radius: 18px;
-            margin: auto;
-            // text-transform: uppercase;
-            transition: all 0.3s ease;
-            font-family: $font-SVG-GothamBold;
-
-            &:hover {
-                // background-color: darken($text-color, 10%);
-            }
-        }
-
         @media (max-width: 525px) {
             .section-header {
                 font-size: calc((52 / 525) * 100vw);
@@ -157,27 +119,87 @@
                 }
             }
 
-            .event-location {
-                .venue-name {
-                    font-size: calc((37 / 525) * 100vw);
-                }
 
-                .venue-address {
-                    font-size: calc((11 / 525) * 100vw);
-                }
+        }
+    }
+}
+
+.map-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0 0;
+
+    .event-location {
+        .venue-name {
+            font-family: $font-lora;
+            font-size: 37px;
+            text-transform: uppercase;
+        }
+
+        .venue-address {
+            font-family: $font-SVG-gotham-book;
+            font-size: 11px;
+            text-align: center;
+            // margin-top: 2%;
+        }
+    }
+
+    .location-map {
+        width: 100%;
+        margin: 10% 0;
+        @include flex-center;
+
+        img {
+            max-width: 373px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .map-button {
+        display: block;
+        font-size: 13px;
+        text-decoration: none;
+        color: #fff;
+        background-color: $text-color;
+        max-width: 329px;
+        width: 100%;
+        aspect-ratio: 329 / 31;
+        @include flex-center;
+        border-radius: 18px;
+        margin: auto;
+        // text-transform: uppercase;
+        transition: all 0.3s ease;
+        font-family: $font-SVG-GothamBold;
+
+        &:hover {
+            // background-color: darken($text-color, 10%);
+        }
+    }
+
+    @media (max-width: 525px) {
+        .event-location {
+            .venue-name {
+                font-size: calc((37 / 525) * 100vw);
             }
 
-            .location-map {
-                img {
-                    max-width: calc((373 / 525) * 100vw);
-                }
+            .venue-address {
+                font-size: calc((11 / 525) * 100vw);
             }
+        }
 
-            .map-button {
-                font-size: calc((13 / 525) * 100vw);
-                max-width: calc((329 / 525) * 100vw);
-                border-radius: calc((18 / 525) * 100vw);
+        .location-map {
+            img {
+                max-width: calc((373 / 525) * 100vw);
             }
+        }
+
+        .map-button {
+            font-size: calc((13 / 525) * 100vw);
+            max-width: calc((329 / 525) * 100vw);
+            border-radius: calc((18 / 525) * 100vw);
         }
     }
 }

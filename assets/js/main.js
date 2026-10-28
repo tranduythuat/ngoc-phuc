@@ -89,6 +89,24 @@
     audio.addEventListener("pause", () => icon.classList.remove("spin"));
   }
 
+  function initQuickActions() {
+    const buttons = qsa("[data-scroll-target]");
+
+    if (!buttons.length) return;
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", (event) => {
+        const selector = button.getAttribute("data-scroll-target");
+        const target = selector ? document.querySelector(selector) : null;
+
+        if (!target) return;
+
+        event.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+  }
+
   /* ======================================================
        DRESSCODE ANIMATION
     ====================================================== */
@@ -681,6 +699,7 @@
     initAnimations();
     initSwiper();
     initMusic();
+    initQuickActions();
     initDresscodeAnimation();
     // initTimeline();
     initFAQ();

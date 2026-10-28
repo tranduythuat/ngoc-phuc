@@ -740,6 +740,7 @@ section {
     font-size: 5.1428571429vw;
   }
   .timeline .items .item {
+    width: 15.2380952381vw;
     font-size: 2.0952380952vw;
     width: 15.2380952381vw;
   }
@@ -878,7 +879,7 @@ section {
   width: 100%;
   perspective: 1000px;
   position: relative;
-  padding: 10% 0 0%;
+  padding: 12% 0 0%;
 }
 .rsvp .content .rsvp-form {
   display: block;

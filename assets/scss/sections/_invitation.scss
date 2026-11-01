@@ -27,7 +27,7 @@
                 line-height: 1.5;
                 font-size: 15px;
                 line-height: 1.5;
-                margin-bottom: 2%;
+
                 text-transform: uppercase;
 
                 span {
@@ -40,6 +40,7 @@
                 font-size: 30px;
                 text-transform: uppercase;
                 letter-spacing: 2.5px;
+                margin-bottom: 2%;
             }
         }
 
@@ -82,11 +83,33 @@
                 font-size: 14px;
                 font-style: italic;
             }
+
+            .gia-tien {
+                margin-top: 8%;
+
+                .label {
+                    font-weight: bold;
+                    margin-bottom: 2%;
+                    font-size: 21px;
+                }
+
+                .time {
+                    font-family: $font-lora;
+                    font-size: 28px;
+                    letter-spacing: 1.5px;
+                }
+
+                .lunar-date {}
+            }
         }
 
         @media (max-width: 525px) {
             .section-header {
                 font-size: calc((52 / 525) * 100vw);
+            }
+
+            .parent-info {
+                font-size: calc((13 / 525) * 100vw);
             }
 
             .message {
@@ -116,6 +139,19 @@
 
                 .lunar-date {
                     font-size: calc((14 / 525) * 100vw);
+                }
+
+                .gia-tien {
+                    .label {
+                        font-size: calc((21 / 525) * 100vw);
+                    }
+
+                    .time {
+                        font-size: calc((28 / 525) * 100vw);
+                        letter-spacing: calc((1.2 / 525) * 100vw);
+                    }
+
+                    .lunar-date {}
                 }
             }
 

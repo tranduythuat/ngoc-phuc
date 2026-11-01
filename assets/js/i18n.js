@@ -12,13 +12,15 @@
    * ========================================================= */
   var translations = {
     vi: {
+      "invitation.groom_parents": "Nhà Trai: Ông Trần Đình Thái - Bà Trần Thị Minh Tuyết",
+      "invitation.bride_parents": "Nhà Gái: Ông Nguyễn Văn Dũng - Bà Từ Thị Hằng",
       "invitation.message":
         'TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH<br />ĐẾN DỰ BỮA CƠM THÂN MẬT MỪNG <strong>LỄ CƯỚI</strong> CỦA',
       "invitation.groom_name": 'Đình Phúc',
       "invitation.bride_name": 'Bích Ngọc',
       "invitation.timeLabel": 'VÀO LÚC <strong>18H00</strong>',
       "invitation.weekday": 'THỨ BẢY',
-      "invitation.lunar_date": "(Nhằm ngày 3 tháng 7 năm Bính Ngọ)",
+      "invitation.lunar_date": "(Nhằm ngày 25 tháng 11 năm Bính Ngọ)",
       "invitation.venueName": "The Myst Đồng Khởi",
       "invitation.venueAddress":
         '6–8 Hồ Huấn Nghiệp, Phường Sài Gòn, Thành phố Hồ Chí Minh',
@@ -61,13 +63,15 @@
       "yenstudio.textMain": 'HẸN GẶP LẠI BẠN!'
     },
     en: {
+      "invitation.groom_parents": "Groom's Family: Mr. Tran Dinh Thai - Mrs. Tran Thi Minh Tuyet",
+      "invitation.bride_parents": "Bride's Family: Mr. Nguyen Van Dung - Mrs. Tu Thi Hang",
       "invitation.message":
         'Together with our families, we cordially invite you to celebrate our wedding at an intimate reception honoring <strong>the marriage</strong> of ',
       "invitation.groom_name": 'Elias Tran',
       "invitation.bride_name": 'Jade Nguyen',
       "invitation.timeLabel": 'AT <strong>18:00</strong>',
       "invitation.weekday": 'SATURDAY',
-      "invitation.lunar_date": "(Nhằm ngày 3 tháng 7 năm Bính Ngọ)",
+      "invitation.lunar_date": "(On the 25th day of the 11th lunar month, Year of the Bính Ngọ)",
       "invitation.venueName": "The Myst Đong Khoi",
       "invitation.venueAddress":
         '6–8 Ho Huan Nghiep Street, Sai Gon Ward, Ho Chi Minh City',
@@ -110,7 +114,7 @@
     }
   };
 
-  var switcherLabels = { vi: "Tiếng Anh", en: "Vietnamese" };
+  var switcherLabels = { vi: "English", en: "Tiếng Việt" };
 
   function isSupported(lang) {
     return SUPPORTED_LANGS.indexOf(lang) !== -1;

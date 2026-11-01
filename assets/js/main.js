@@ -55,6 +55,13 @@
       audio.play().catch(() => {
         // Browser blocks autoplay outside a user gesture; ignore here
       });
+
+      if (isOpen) {
+        tl.play();
+      } else {
+        tl.reverse();
+      }
+      isOpen = !isOpen;
     };
 
     // 👉 GSAP timeline cho label

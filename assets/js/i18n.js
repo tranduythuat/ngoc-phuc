@@ -15,7 +15,7 @@
       "invitation.groom_parents": "Nhà Trai: Ông Trần Đình Thái - Bà Trần Thị Minh Tuyết",
       "invitation.bride_parents": "Nhà Gái: Ông Nguyễn Văn Dũng - Bà Từ Thị Hằng",
       "invitation.message":
-        'TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH<br />ĐẾN DỰ BỮA CƠM THÂN MẬT MỪNG <strong>LỄ CƯỚI</strong> CỦA',
+        'TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH<br />ĐẾN DỰ BỮA CƠM THÂN MẬT MỪNG <strong>LỄ CƯỚI</strong>',
       "invitation.groom_name": 'Đình Phúc',
       "invitation.bride_name": 'Bích Ngọc',
       "invitation.timeLabel": 'VÀO LÚC <strong>18H00</strong>',
@@ -66,7 +66,7 @@
       "invitation.groom_parents": "Groom's Family: Mr. Tran Dinh Thai - Mrs. Tran Thi Minh Tuyet",
       "invitation.bride_parents": "Bride's Family: Mr. Nguyen Van Dung - Mrs. Tu Thi Hang",
       "invitation.message":
-        'Together with our families, we cordially invite you to celebrate our wedding at an intimate reception honoring <strong>the marriage</strong> of ',
+        'Together with our families, we cordially invite you to celebrate our wedding at an intimate reception honoring <strong>the marriage</strong>',
       "invitation.groom_name": 'Elias Tran',
       "invitation.bride_name": 'Jade Nguyen',
       "invitation.timeLabel": 'AT <strong>18:00</strong>',

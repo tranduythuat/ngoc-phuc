@@ -314,7 +314,7 @@ section {
   width: 100%;
 }
 .hero .content {
-  aspect-ratio: 525/860;
+  aspect-ratio: 525/250;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -338,8 +338,7 @@ section {
 }
 .hero .content .hero-images {
   width: 100%;
-  aspect-ratio: 525/800;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.204), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngoc-phuc/couple/2-HP_06592.jpg") no-repeat center/180%;
+  aspect-ratio: 525/190;
   color: #ffffff;
   display: flex;
   justify-content: flex-end;
@@ -350,6 +349,7 @@ section {
   font-family: "Lora", sans-serif;
   font-size: 36px;
   width: 100%;
+  color: #231f20;
 }
 .hero .content .hero-images .save-the span {
   font-family: "1FTVVIPAmsterdamSignature", sans-serif;
@@ -359,7 +359,7 @@ section {
 .hero .content .hero-images .date {
   font-family: "SVG-gotham-book", sans-serif;
   font-size: 17px;
-  color: #ffffff;
+  color: #231f20;
   margin-bottom: 5%;
   letter-spacing: 1.8px;
 }
@@ -415,6 +415,12 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 2%;
+}
+.invitation .content .hero-img {
+  width: 100%;
+  aspect-ratio: 525/800;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngoc-phuc/couple/2-HP_06592.jpg") no-repeat center/180%;
+  margin: 10% 0 15%;
 }
 .invitation .content .divider-icon {
   margin: 8% 0 0%;

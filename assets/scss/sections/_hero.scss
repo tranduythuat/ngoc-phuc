@@ -5,7 +5,7 @@
     width: 100%;
 
     .content {
-        aspect-ratio: 525 / 860;
+        aspect-ratio: 525 / 250;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -21,7 +21,6 @@
                 font-size: 18px;
                 font-family: $font-ClassiqueSaigon;
                 margin: 0 10%;
-
             }
 
             .dot {
@@ -31,8 +30,8 @@
 
         .hero-images {
             width: 100%;
-            aspect-ratio: 525 / 800;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.204), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngoc-phuc/couple/2-HP_06592.jpg') no-repeat center / 180%;
+            aspect-ratio: 525 / 190;
+            // background: linear-gradient(to top, rgba(0, 0, 0, 0.204), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngoc-phuc/couple/2-HP_06592.jpg') no-repeat center / 180%;
             color: $secondary-color;
             display: flex;
             justify-content: flex-end;
@@ -43,6 +42,7 @@
                 font-family: $font-lora;
                 font-size: 36px;
                 width: 100%;
+                color: $text-color;
 
                 span {
                     font-family: $font-1FTVVIPAmsterdamSignature;
@@ -54,7 +54,7 @@
             .date {
                 font-family: $font-SVG-gotham-book;
                 font-size: 17px;
-                color: $secondary-color;
+                color: $text-color;
                 margin-bottom: 5%;
                 letter-spacing: 1.8px;
             }

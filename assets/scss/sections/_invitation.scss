@@ -39,7 +39,7 @@
                 font-family: $font-lora;
                 font-size: 30px;
                 text-transform: uppercase;
-                letter-spacing: 2.5px;
+                letter-spacing: 2px;
                 margin-bottom: 2%;
             }
         }
@@ -119,6 +119,7 @@
 
                 .couple-name {
                     font-size: calc((30 / 525) * 100vw);
+                    letter-spacing: calc((2 / 525) * 100vw);
                 }
             }
 

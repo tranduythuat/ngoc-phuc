@@ -84,13 +84,27 @@
   transform: scale(0.97);
 }
 
-/* ===== Floating language switcher ===== */
-.lang-switcher {
+/* ===== Floating top actions ===== */
+.top-actions {
+  width: 110px;
   position: fixed;
-  right: 16px;
   top: 16px;
+  right: 16px;
   z-index: 999;
-  max-width: 110px;
+  display: flex;
+  align-items: end;
+  flex-direction: column-reverse;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.top-actions>* {
+  pointer-events: auto;
+}
+
+.lang-switcher {
+  position: static;
+  max-width: 100px;
   width: 100%;
   aspect-ratio: 10 / 3;
   border-radius: 55px;
@@ -126,10 +140,13 @@ html[lang="en"] .gia-tien {
 }
 
 @media (max-width: 525px) {
-  .lang-switcher {
-    right: 3%;
+  /* .top-actions {
     top: 1%;
-    max-width: calc((110 / 525) * 100vw);
+    right: 3%;
+  } */
+
+  .lang-switcher {
+    max-width: calc((100 / 525) * 100vw);
     font-size: calc((13 / 525) * 100vw);
   }
 }

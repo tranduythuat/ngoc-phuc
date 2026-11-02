@@ -55,11 +55,27 @@ section {
     gap: 8px;
     pointer-events: none;
 
-    .music-box,
-    .quick-actions {
+    .music-box {
         pointer-events: auto;
     }
 }
+
+// .top-actions {
+//     position: fixed;
+//     top: 16px;
+//     right: 16px;
+//     z-index: 999;
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column-reverse;
+//     justify-content: flex-end;
+//     gap: 8px;
+//     pointer-events: none;
+
+//     >* {
+//         pointer-events: auto;
+//     }
+// }
 
 .music-box {
     display: flex;
@@ -102,21 +118,19 @@ section {
 
 .quick-actions {
     display: flex;
-    // flex-direction: column;
+    flex-direction: column;
     gap: 8px;
-    align-items: stretch;
 }
 
 .quick-action {
     border: 1px solid rgba(48, 44, 42, 0.35);
-    background: rgba(255, 255, 255, 0.82);
-    color: #2d211f;
-    font-family: $font-lora;
-    font-size: 10px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+    background: #f8f3eb;
+    color: #231f20;
+    font-family: $font-SVG-gotham-book;
+    font-size: 13px;
+    font-weight: 700;
     border-radius: 999px;
-    padding: 7px 12px;
+    padding: 4px 12px;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -178,8 +192,8 @@ section {
     }
 
     .quick-action {
-        font-size: calc((10 / 525) * 100vw);
-        padding: calc((7 / 525) * 100vw) calc((12 / 525) * 100vw);
+        font-size: calc((13 / 525) * 100vw);
+        padding: calc((4 / 525) * 100vw) calc((12 / 525) * 100vw);
     }
 }
 

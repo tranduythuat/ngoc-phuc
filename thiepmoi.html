@@ -39,7 +39,19 @@
   </div>
 
   <!-- Small switcher to change language any time -->
-  <button type="button" id="langSwitcher" class="lang-switcher" aria-label="Switch language"></button>
+  <div class="top-actions">
+    <div class="quick-actions" aria-label="Quick access buttons">
+      <button type="button" class="quick-action" data-scroll-target="#map-section" aria-label="Go to map section"
+        data-i18n="quick_actions.map">
+        Map
+      </button>
+      <button type="button" class="quick-action" data-scroll-target="#rsvp-section" aria-label="Go to RSVP section"
+        data-i18n="quick_actions.rsvp">
+        RSVP
+      </button>
+    </div>
+    <button type="button" id="langSwitcher" class="lang-switcher" aria-label="Switch language"></button>
+  </div>
 
   <div class="container">
     <section class="hero">
@@ -71,15 +83,15 @@
         </div>
 
         <div class="message">
+          <p class="text" data-i18n="invitation.message">
+            TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH<br />
+            ĐẾN THAM DỰ <strong>LỄ CƯỚI</strong> CỦA
+          </p>
           <div class="couple-name">
             <span class="groom-name" data-i18n="invitation.groom_name">Đình Phúc</span>
             <span class="separator">&amp;</span>
             <span class="bride-name" data-i18n="invitation.bride_name">Bích Ngọc </span>
           </div>
-          <p class="text" data-i18n="invitation.message">
-            TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH<br />
-            ĐẾN DỰ BỪA CƠM THÂN MẬT MỪNG <strong>LỄ CƯỚI</strong>
-          </p>
         </div>
 
         <div class="hero-img">
@@ -586,15 +598,6 @@
         <div class="player" id="player-btn" aria-label="Play/Pause">
           <img id="iconSvg" src="assets/images/cd.png" alt="Music Icon" />
         </div>
-      </div>
-
-      <div class="quick-actions" aria-label="Quick access buttons">
-        <button type="button" class="quick-action" data-scroll-target="#map-section" aria-label="Go to map section">
-          Map
-        </button>
-        <button type="button" class="quick-action" data-scroll-target="#rsvp-section" aria-label="Go to RSVP section">
-          RSVP
-        </button>
       </div>
     </div>
     <audio id="audio" preload="auto"

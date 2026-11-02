@@ -109,8 +109,7 @@ section {
   gap: 8px;
   pointer-events: none;
 }
-.music-box-wrapper .music-box,
-.music-box-wrapper .quick-actions {
+.music-box-wrapper .music-box {
   pointer-events: auto;
 }
 
@@ -156,20 +155,19 @@ section {
 
 .quick-actions {
   display: flex;
+  flex-direction: column;
   gap: 8px;
-  align-items: stretch;
 }
 
 .quick-action {
   border: 1px solid rgba(48, 44, 42, 0.35);
-  background: rgba(255, 255, 255, 0.82);
-  color: #2d211f;
-  font-family: "Lora", sans-serif;
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  background: #f8f3eb;
+  color: #231f20;
+  font-family: "SVG-gotham-book", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
   border-radius: 999px;
-  padding: 7px 12px;
+  padding: 4px 12px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -205,8 +203,8 @@ section {
     max-width: 10.4761904762vw;
   }
   .quick-action {
-    font-size: 1.9047619048vw;
-    padding: 1.3333333333vw 2.2857142857vw;
+    font-size: 2.4761904762vw;
+    padding: 0.7619047619vw 2.2857142857vw;
   }
 }
 .spin {
@@ -405,6 +403,7 @@ section {
   font-size: 15px;
   line-height: 1.5;
   text-transform: uppercase;
+  margin-bottom: 5%;
 }
 .invitation .content .message .text span {
   font-weight: bold;
@@ -414,7 +413,6 @@ section {
   font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 2%;
 }
 .invitation .content .hero-img {
   width: 100%;
@@ -459,9 +457,10 @@ section {
   margin-top: 8%;
 }
 .invitation .content .event-time .gia-tien .label {
-  font-weight: bold;
   margin-bottom: 2%;
-  font-size: 21px;
+  font-size: 17px;
+  font-family: "SVG-gotham-book", sans-serif;
+  text-transform: uppercase;
 }
 .invitation .content .event-time .gia-tien .time {
   font-family: "Lora", sans-serif;
@@ -495,7 +494,7 @@ section {
     font-size: 2.6666666667vw;
   }
   .invitation .content .event-time .gia-tien .label {
-    font-size: 4vw;
+    font-size: 3.2380952381vw;
   }
   .invitation .content .event-time .gia-tien .time {
     font-size: 5.3333333333vw;

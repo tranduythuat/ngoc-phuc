@@ -39,7 +39,7 @@
 
       "rsvp.title": "Xác nhận tham dự",
       "rsvp.subtitle":
-        'KHÁCH MỜI VUI LÒNG <br> XÁC NHẬN THAM DỰ TRƯỚC <strong>NGÀY 01/08</strong>.',
+        'KHÁCH MỜI VUI LÒNG <br> XÁC NHẬN THAM DỰ TRƯỚC <strong>NGÀY 6/12</strong>.',
       "rsvp.namePlaceholder": 'Tên khách mời',
       "rsvp.phonePlaceholder": "SĐT",
       "rsvp.guests_number": 'Số lượng người tham dự',
@@ -91,7 +91,7 @@
       "album.subtext": 'TAKE A LOOK AT OUR WEDDING ALBUM!',
 
       "rsvp.title": "KINDLY RSVP",
-      "rsvp.subtitle": "KINDLY <br> REPLY BY <strong>AUGUST 1ST</strong>.",
+      "rsvp.subtitle": "KINDLY <br> REPLY BY <strong>DECEMBER 6TH</strong>.",
       "rsvp.namePlaceholder": "Full Name",
       "rsvp.phonePlaceholder": "Phone Number",
       "rsvp.guests_number": "Total Number of Attendees",

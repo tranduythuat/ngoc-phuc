@@ -56,7 +56,7 @@
 
         .text-main {
             margin-top: 1%;
-            font-size: 12px;
+            font-size: 14px;
             font-family: $font-SVG-GothamLight;
             font-style: italic;
             margin-top: 4%;
@@ -71,7 +71,7 @@
 
         @media (max-width: 525px) {
             .text-main {
-                font-size: calc((12 / 525) * 100vw);
+                font-size: calc((14 / 525) * 100vw);
             }
 
             .text {

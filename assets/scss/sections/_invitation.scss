@@ -15,10 +15,13 @@
 
         .parent-info {
             font-family: $font-SVG-gotham-book;
-            font-size: 13px;
+            font-size: 14px;
             text-transform: uppercase;
             line-height: 1.5;
             margin: 10% 0;
+            display: flex;
+            justify-content: center;
+            gap: 10%;
         }
 
         .message {
@@ -46,12 +49,16 @@
         .hero-img {
             width: 100%;
             aspect-ratio: 525 / 800;
-            background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngoc-phuc/couple/2-HP_06592.jpg") no-repeat center / 180%;
+            // background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngoc-phuc/couple/2-HP_06592.jpg") no-repeat center / 180%;
             margin: 10% 0 15%;
         }
 
         .divider-icon {
             margin: 8% 0 0%;
+
+            &.second {
+                margin: 15% 0 0;
+            }
 
             img {
                 width: 100%;
@@ -67,6 +74,7 @@
             .time-label {
                 font-family: $font-SVG-gotham-book;
                 font-size: 17px;
+                margin-top: 8%;
 
                 strong {
                     font-family: $font-SVG-GothamBold;
@@ -86,27 +94,90 @@
             }
 
             .lunar-date {
-                font-size: 14px;
+                font-size: 17px;
                 font-style: italic;
             }
 
-            .gia-tien {
-                margin-top: 8%;
 
-                .label {
-                    margin-bottom: 2%;
-                    font-size: 17px;
-                    font-family: $font-SVG-gotham-book;
+        }
+
+        .map-box {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 10% 0 0;
+
+            .event-location {
+                .venue-name {
+                    font-family: $font-lora;
+                    font-size: 37px;
                     text-transform: uppercase;
                 }
 
-                .time {
-                    font-family: $font-lora;
-                    font-size: 28px;
-                    letter-spacing: 1.5px;
+                .venue-address {
+                    font-family: $font-SVG-gotham-book;
+                    font-size: 14px;
+                    text-align: center;
+                    // margin-top: 2%;
                 }
+            }
 
-                .lunar-date {}
+            .location-map {
+                width: 100%;
+                margin: 10% 0;
+                @include flex-center;
+
+                img {
+                    max-width: 373px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .map-button {
+                display: block;
+                font-size: 13px;
+                text-decoration: none;
+                color: #fff;
+                background-color: $text-color;
+                max-width: 329px;
+                width: 100%;
+                aspect-ratio: 329 / 31;
+                @include flex-center;
+                border-radius: 18px;
+                margin: auto;
+                // text-transform: uppercase;
+                transition: all 0.3s ease;
+                font-family: $font-SVG-GothamBold;
+
+                &:hover {
+                    // background-color: darken($text-color, 10%);
+                }
+            }
+
+        }
+
+        .gia-tien {
+            margin: 14% 0 5%;
+
+            .label {
+                margin-bottom: 2%;
+                font-size: 17px;
+                font-family: $font-SVG-gotham-book;
+                text-transform: uppercase;
+            }
+
+            .time {
+                font-family: $font-lora;
+                font-size: 37px;
+                letter-spacing: 1.5px;
+            }
+
+            .lunar-date {
+                font-size: 17px;
+                font-family: $font-lora;
+                font-style: italic;
             }
         }
 
@@ -116,7 +187,7 @@
             }
 
             .parent-info {
-                font-size: calc((13 / 525) * 100vw);
+                font-size: calc((14 / 525) * 100vw);
             }
 
             .message {
@@ -146,104 +217,48 @@
                 }
 
                 .lunar-date {
-                    font-size: calc((14 / 525) * 100vw);
-                }
-
-                .gia-tien {
-                    .label {
-                        font-size: calc((17 / 525) * 100vw);
-                    }
-
-                    .time {
-                        font-size: calc((28 / 525) * 100vw);
-                        letter-spacing: calc((1.2 / 525) * 100vw);
-                    }
-
-                    .lunar-date {}
+                    font-size: calc((17 / 525) * 100vw);
                 }
             }
 
+            .map-box {
+                .event-location {
+                    .venue-name {
+                        font-size: calc((37 / 525) * 100vw);
+                    }
 
-        }
-    }
-}
+                    .venue-address {
+                        font-size: calc((14 / 525) * 100vw);
+                    }
+                }
 
-.map-box {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 10% 0 0;
+                .location-map {
+                    img {
+                        max-width: calc((373 / 525) * 100vw);
+                    }
+                }
 
-    .event-location {
-        .venue-name {
-            font-family: $font-lora;
-            font-size: 37px;
-            text-transform: uppercase;
-        }
-
-        .venue-address {
-            font-family: $font-SVG-gotham-book;
-            font-size: 11px;
-            text-align: center;
-            // margin-top: 2%;
-        }
-    }
-
-    .location-map {
-        width: 100%;
-        margin: 10% 0;
-        @include flex-center;
-
-        img {
-            max-width: 373px;
-            width: 100%;
-            height: auto;
-        }
-    }
-
-    .map-button {
-        display: block;
-        font-size: 13px;
-        text-decoration: none;
-        color: #fff;
-        background-color: $text-color;
-        max-width: 329px;
-        width: 100%;
-        aspect-ratio: 329 / 31;
-        @include flex-center;
-        border-radius: 18px;
-        margin: auto;
-        // text-transform: uppercase;
-        transition: all 0.3s ease;
-        font-family: $font-SVG-GothamBold;
-
-        &:hover {
-            // background-color: darken($text-color, 10%);
-        }
-    }
-
-    @media (max-width: 525px) {
-        .event-location {
-            .venue-name {
-                font-size: calc((37 / 525) * 100vw);
+                .map-button {
+                    font-size: calc((13 / 525) * 100vw);
+                    max-width: calc((329 / 525) * 100vw);
+                    border-radius: calc((18 / 525) * 100vw);
+                }
             }
 
-            .venue-address {
-                font-size: calc((11 / 525) * 100vw);
-            }
-        }
+            .gia-tien {
+                .label {
+                    font-size: calc((17 / 525) * 100vw);
+                }
 
-        .location-map {
-            img {
-                max-width: calc((373 / 525) * 100vw);
-            }
-        }
+                .time {
+                    font-size: calc((37 / 525) * 100vw);
+                    letter-spacing: calc((1.5 / 525) * 100vw);
+                }
 
-        .map-button {
-            font-size: calc((13 / 525) * 100vw);
-            max-width: calc((329 / 525) * 100vw);
-            border-radius: calc((18 / 525) * 100vw);
+                .lunar-date {}
+            }
+
+
         }
     }
 }

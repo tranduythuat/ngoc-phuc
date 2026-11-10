@@ -21,7 +21,7 @@
         }
 
         h2 {
-            font-size: 27px;
+            font-size: 32px;
             font-family: $font-lora;
             font-weight: 300;
             text-transform: uppercase;
@@ -29,7 +29,7 @@
 
         .subtext {
             font-family: $font-SVG-GothamLight;
-            font-size: 9px;
+            font-size: 14px;
             margin-top: 1%;
             margin-bottom: 5%;
         }
@@ -62,22 +62,26 @@
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 525px) {
         .content {
             h2 {
-                font-size: calc((41 / 500) * 100vw);
+                font-size: calc((32 / 525) * 100vw);
+            }
+
+            .subtext {
+                font-size: calc((14 / 525) * 100vw);
             }
 
             .swiper {
 
                 .swiper-button-next:after,
                 .swiper-button-prev:after {
-                    font-size: calc((44 / 500) * 100vw);
+                    font-size: calc((44 / 525) * 100vw);
                 }
 
                 .swiper-pagination-bullet {
-                    width: calc((16 / 500) * 100vw);
-                    height: calc((16 / 500) * 100vw);
+                    width: calc((16 / 525) * 100vw);
+                    height: calc((16 / 525) * 100vw);
                 }
             }
         }

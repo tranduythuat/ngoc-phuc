@@ -312,7 +312,7 @@ section {
   width: 100%;
 }
 .hero .content {
-  aspect-ratio: 525/250;
+  aspect-ratio: 525/860;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -336,7 +336,8 @@ section {
 }
 .hero .content .hero-images {
   width: 100%;
-  aspect-ratio: 525/190;
+  aspect-ratio: 525/800;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.204), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngoc-phuc/couple/2-HP_06592.jpg") no-repeat center/180%;
   color: #ffffff;
   display: flex;
   justify-content: flex-end;
@@ -347,7 +348,7 @@ section {
   font-family: "Lora", sans-serif;
   font-size: 36px;
   width: 100%;
-  color: #231f20;
+  color: #ffffff;
 }
 .hero .content .hero-images .save-the span {
   font-family: "1FTVVIPAmsterdamSignature", sans-serif;
@@ -357,7 +358,7 @@ section {
 .hero .content .hero-images .date {
   font-family: "SVG-gotham-book", sans-serif;
   font-size: 17px;
-  color: #231f20;
+  color: #ffffff;
   margin-bottom: 5%;
   letter-spacing: 1.8px;
 }
@@ -392,10 +393,13 @@ section {
 }
 .invitation .content .parent-info {
   font-family: "SVG-gotham-book", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
   line-height: 1.5;
   margin: 10% 0;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
 }
 .invitation .content .message .text {
   font-family: "SVG-gotham-book", sans-serif;
@@ -417,11 +421,13 @@ section {
 .invitation .content .hero-img {
   width: 100%;
   aspect-ratio: 525/800;
-  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngoc-phuc/couple/2-HP_06592.jpg") no-repeat center/180%;
   margin: 10% 0 15%;
 }
 .invitation .content .divider-icon {
   margin: 8% 0 0%;
+}
+.invitation .content .divider-icon.second {
+  margin: 15% 0 0;
 }
 .invitation .content .divider-icon img {
   width: 100%;
@@ -435,6 +441,7 @@ section {
 .invitation .content .event-time .time-label {
   font-family: "SVG-gotham-book", sans-serif;
   font-size: 17px;
+  margin-top: 8%;
 }
 .invitation .content .event-time .time-label strong {
   font-family: "SVG-GothamBold", sans-serif;
@@ -450,29 +457,80 @@ section {
   top: -3px;
 }
 .invitation .content .event-time .lunar-date {
-  font-size: 14px;
+  font-size: 17px;
   font-style: italic;
 }
-.invitation .content .event-time .gia-tien {
-  margin-top: 8%;
+.invitation .content .map-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 0 0;
 }
-.invitation .content .event-time .gia-tien .label {
+.invitation .content .map-box .event-location .venue-name {
+  font-family: "Lora", sans-serif;
+  font-size: 37px;
+  text-transform: uppercase;
+}
+.invitation .content .map-box .event-location .venue-address {
+  font-family: "SVG-gotham-book", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+.invitation .content .map-box .location-map {
+  width: 100%;
+  margin: 10% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invitation .content .map-box .location-map img {
+  max-width: 373px;
+  width: 100%;
+  height: auto;
+}
+.invitation .content .map-box .map-button {
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #231f20;
+  max-width: 329px;
+  width: 100%;
+  aspect-ratio: 329/31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  margin: auto;
+  transition: all 0.3s ease;
+  font-family: "SVG-GothamBold", sans-serif;
+}
+.invitation .content .gia-tien {
+  margin: 14% 0 5%;
+}
+.invitation .content .gia-tien .label {
   margin-bottom: 2%;
   font-size: 17px;
   font-family: "SVG-gotham-book", sans-serif;
   text-transform: uppercase;
 }
-.invitation .content .event-time .gia-tien .time {
+.invitation .content .gia-tien .time {
   font-family: "Lora", sans-serif;
-  font-size: 28px;
+  font-size: 37px;
   letter-spacing: 1.5px;
+}
+.invitation .content .gia-tien .lunar-date {
+  font-size: 17px;
+  font-family: "Lora", sans-serif;
+  font-style: italic;
 }
 @media (max-width: 525px) {
   .invitation .content .section-header {
     font-size: 9.9047619048vw;
   }
   .invitation .content .parent-info {
-    font-size: 2.4761904762vw;
+    font-size: 2.6666666667vw;
   }
   .invitation .content .message .text {
     font-size: 2.8571428571vw;
@@ -491,82 +549,34 @@ section {
     font-size: 7.0476190476vw;
   }
   .invitation .content .event-time .lunar-date {
-    font-size: 2.6666666667vw;
-  }
-  .invitation .content .event-time .gia-tien .label {
     font-size: 3.2380952381vw;
   }
-  .invitation .content .event-time .gia-tien .time {
-    font-size: 5.3333333333vw;
-    letter-spacing: 0.2285714286vw;
-  }
-}
-
-.map-box {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 10% 0 0;
-}
-.map-box .event-location .venue-name {
-  font-family: "Lora", sans-serif;
-  font-size: 37px;
-  text-transform: uppercase;
-}
-.map-box .event-location .venue-address {
-  font-family: "SVG-gotham-book", sans-serif;
-  font-size: 11px;
-  text-align: center;
-}
-.map-box .location-map {
-  width: 100%;
-  margin: 10% 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.map-box .location-map img {
-  max-width: 373px;
-  width: 100%;
-  height: auto;
-}
-.map-box .map-button {
-  display: block;
-  font-size: 13px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #231f20;
-  max-width: 329px;
-  width: 100%;
-  aspect-ratio: 329/31;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 18px;
-  margin: auto;
-  transition: all 0.3s ease;
-  font-family: "SVG-GothamBold", sans-serif;
-}
-@media (max-width: 525px) {
-  .map-box .event-location .venue-name {
+  .invitation .content .map-box .event-location .venue-name {
     font-size: 7.0476190476vw;
   }
-  .map-box .event-location .venue-address {
-    font-size: 2.0952380952vw;
+  .invitation .content .map-box .event-location .venue-address {
+    font-size: 2.6666666667vw;
   }
-  .map-box .location-map img {
+  .invitation .content .map-box .location-map img {
     max-width: 71.0476190476vw;
   }
-  .map-box .map-button {
+  .invitation .content .map-box .map-button {
     font-size: 2.4761904762vw;
     max-width: 62.6666666667vw;
     border-radius: 3.4285714286vw;
+  }
+  .invitation .content .gia-tien .label {
+    font-size: 3.2380952381vw;
+  }
+  .invitation .content .gia-tien .time {
+    font-size: 7.0476190476vw;
+    letter-spacing: 0.2857142857vw;
   }
 }
 
 .gallery {
   width: 100%;
+  margin-bottom: 10%;
 }
 .gallery .content {
   aspect-ratio: 500/500;
@@ -592,6 +602,15 @@ section {
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/ngoc-phuc/couple/HY705344.jpg") no-repeat 29% 50%/cover;
   box-shadow: 12px -4px #231f20;
 }
+.gallery .content .subtext {
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  font-family: "1FTVVIPAmsterdamSignature", sans-serif;
+}
 @media (max-width: 525px) {
   .gallery .content .main {
     max-width: 36.380952381vw;
@@ -601,6 +620,9 @@ section {
   }
   .gallery .content .main.image2 {
     box-shadow: 2.2857142857vw -0.7619047619vw #231f20;
+  }
+  .gallery .content .subtext {
+    font-size: 5.3333333333vw;
   }
 }
 
@@ -643,12 +665,11 @@ section {
   width: 100%;
 }
 .timeline .items .item .icon img {
-  max-width: 42px;
+  max-width: 46px;
   width: 100%;
   height: auto;
 }
 .timeline .items .item .time {
-  letter-spacing: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -658,6 +679,8 @@ section {
 }
 .timeline .items .item .time span {
   font-family: "DFVNCatchyMager", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
   padding: 6% 0 1%;
   display: flex;
   justify-content: center;
@@ -666,13 +689,13 @@ section {
   height: 100%;
   display: block;
   line-height: 1;
-  border-radius: 5px;
 }
 .timeline .items .item .label {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Lora", sans-serif;
+  font-size: 15px;
   text-align: left;
   margin-top: 5%;
   text-align: center;
@@ -685,7 +708,7 @@ section {
   left: 28%;
 }
 .timeline .items .item:nth-of-type(1) .icon img {
-  max-width: 54px;
+  max-width: 60px;
 }
 .timeline .items .item:nth-of-type(2) {
   top: 25.5%;
@@ -693,10 +716,10 @@ section {
 }
 .timeline .items .item:nth-of-type(3) {
   top: 42%;
-  left: 28%;
+  left: 27%;
 }
 .timeline .items .item:nth-of-type(3) .icon img {
-  max-width: 44px;
+  max-width: 48px;
 }
 .timeline .items .item:nth-of-type(4) {
   top: 58%;
@@ -712,7 +735,7 @@ section {
 .timeline .subtext {
   font-family: "SVG-gotham-book", sans-serif;
   font-style: italic;
-  font-size: 11px;
+  font-size: 14px;
   margin-top: 2%;
   padding: 0 10%;
 }
@@ -774,25 +797,29 @@ section {
     width: 15.2380952381vw;
   }
   .timeline .items .item .icon img {
-    max-width: 8vw;
+    max-width: 8.7619047619vw;
   }
   .timeline .items .item .time span {
-    border-radius: 0.9523809524vw;
+    font-size: 2.8571428571vw;
+    letter-spacing: 0.1904761905vw;
+  }
+  .timeline .items .item .label {
+    font-size: 2.8571428571vw;
   }
   .timeline .items .item .label i {
     font-size: 2.2857142857vw;
   }
   .timeline .items .item:nth-of-type(1) .icon img {
-    max-width: 10.2857142857vw;
+    max-width: 11.4285714286vw;
   }
   .timeline .items .item:nth-of-type(3) .icon img {
-    max-width: 8.380952381vw;
+    max-width: 9.1428571429vw;
   }
   .timeline .items .item:nth-of-type(5) .icon img {
     max-width: 5.3333333333vw;
   }
   .timeline .subtext {
-    font-size: 2.0952380952vw;
+    font-size: 2.6666666667vw;
   }
   .timeline .dresscode .title {
     font-size: 5.1428571429vw;
@@ -850,14 +877,14 @@ section {
   height: auto;
 }
 .album .content h2 {
-  font-size: 27px;
+  font-size: 32px;
   font-family: "Lora", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
 }
 .album .content .subtext {
   font-family: "SVG-GothamLight", sans-serif;
-  font-size: 9px;
+  font-size: 14px;
   margin-top: 1%;
   margin-bottom: 5%;
 }
@@ -883,17 +910,20 @@ section {
   height: 16px;
   display: inline-block;
 }
-@media (max-width: 500px) {
+@media (max-width: 525px) {
   .album .content h2 {
-    font-size: 8.2vw;
+    font-size: 6.0952380952vw;
+  }
+  .album .content .subtext {
+    font-size: 2.6666666667vw;
   }
   .album .content .swiper .swiper-button-next:after,
   .album .content .swiper .swiper-button-prev:after {
-    font-size: 8.8vw;
+    font-size: 8.380952381vw;
   }
   .album .content .swiper .swiper-pagination-bullet {
-    width: 3.2vw;
-    height: 3.2vw;
+    width: 3.0476190476vw;
+    height: 3.0476190476vw;
   }
 }
 
@@ -915,7 +945,7 @@ section {
   padding: 0 7%;
 }
 .rsvp .content .rsvp-form .header .title {
-  font-size: 29px;
+  font-size: 34px;
   font-family: "Lora", sans-serif;
   line-height: 0.8;
   margin-bottom: 5%;
@@ -935,7 +965,7 @@ section {
 .rsvp .content .rsvp-form .button-group {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 8%;
+  gap: 4%;
   margin-bottom: 2%;
 }
 .rsvp .content .rsvp-form .button-group .radio-wrapper {
@@ -961,6 +991,7 @@ section {
   text-align: center;
   border: solid 2px #231f20;
   font-family: "SVG-gotham", sans-serif;
+  font-size: 13px;
 }
 .rsvp .content .rsvp-form .button-group .radio-label:hover {
   background: #231f20;
@@ -989,7 +1020,7 @@ section {
   transition: border-color 0.3s ease;
   color: #231f20;
   background-color: transparent;
-  font-size: 12px;
+  font-size: 15px;
   font-family: "SVG-GothamLight", sans-serif;
 }
 .rsvp .content .rsvp-form .form-group input[type=text]:focus,
@@ -999,7 +1030,7 @@ section {
 }
 .rsvp .content .rsvp-form .form-group input[type=text]::placeholder,
 .rsvp .content .rsvp-form .form-group textarea::placeholder {
-  color: #939292;
+  color: rgb(47, 47, 47);
 }
 .rsvp .content .rsvp-form .form-group textarea#message {
   aspect-ratio: 8/2;
@@ -1020,10 +1051,11 @@ section {
   /* Cho phép hiển thị xuống dòng trong placeholder */
 }
 .rsvp .content .rsvp-form .form-group .subtitle {
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
   margin-bottom: 3%;
   font-family: "SVG-gotham-book", sans-serif;
+  line-height: 1.5;
 }
 .rsvp .content .rsvp-form .form-group .flower1 {
   max-width: 82px;
@@ -1067,7 +1099,7 @@ section {
   line-height: 1.5;
   border-radius: 10px;
   background: transparent;
-  font-size: 11px;
+  font-size: 14px;
   color: #231f20;
   outline: none;
   border: 2px solid #231f20;
@@ -1093,7 +1125,7 @@ section {
   border: none;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   text-transform: uppercase;
   transition: background 0.3s ease;
@@ -1108,7 +1140,7 @@ section {
 }
 @media (max-width: 525px) {
   .rsvp .content .rsvp-form .header .title {
-    font-size: 5.5238095238vw;
+    font-size: 6.4761904762vw;
   }
   .rsvp .content .rsvp-form .header .title i {
     font-size: 4.1904761905vw;
@@ -1122,18 +1154,18 @@ section {
   .rsvp .content .rsvp-form .form-group input[type=text],
   .rsvp .content .rsvp-form .form-group input[type=number],
   .rsvp .content .rsvp-form .form-group textarea {
-    font-size: 2.2857142857vw;
+    font-size: 2.8571428571vw;
   }
   .rsvp .content .rsvp-form .form-group .subtitle {
-    font-size: 2.2857142857vw;
+    font-size: 2.8571428571vw;
   }
   .rsvp .content .rsvp-form .form-group .form-select {
     border-radius: 1.9047619048vw;
-    font-size: 2.0952380952vw;
+    font-size: 2.6666666667vw;
     background-size: 1.7142857143vw;
   }
   .rsvp .content .rsvp-form .submit-btn {
-    font-size: 2.2857142857vw;
+    font-size: 2.6666666667vw;
   }
 }
 
@@ -1182,7 +1214,7 @@ section {
 }
 .yenstudio .content .text-main {
   margin-top: 1%;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "SVG-GothamLight", sans-serif;
   font-style: italic;
   margin-top: 4%;
@@ -1195,7 +1227,7 @@ section {
 }
 @media (max-width: 525px) {
   .yenstudio .content .text-main {
-    font-size: 2.2857142857vw;
+    font-size: 2.6666666667vw;
   }
   .yenstudio .content .text {
     font-size: 1.7142857143vw;

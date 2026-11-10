@@ -16,7 +16,7 @@
 
             .header {
                 .title {
-                    font-size: 29px;
+                    font-size: 34px;
                     font-family: $font-lora;
                     line-height: .8;
                     margin-bottom: 5%;
@@ -40,7 +40,7 @@
             .button-group {
                 display: grid;
                 grid-template-columns: auto auto;
-                gap: 8%;
+                gap: 4%;
                 margin-bottom: 2%;
 
                 .radio-wrapper {
@@ -66,6 +66,7 @@
                     text-align: center;
                     border: solid 2px $text-color;
                     font-family: $font-SVG-gotham;
+                    font-size: 13px;
 
                     &:hover {
                         background: $text-color;
@@ -98,7 +99,7 @@
                     transition: border-color 0.3s ease;
                     color: $text-color;
                     background-color: transparent;
-                    font-size: 12px;
+                    font-size: 15px;
                     font-family: $font-SVG-GothamLight;
                 }
 
@@ -110,7 +111,7 @@
 
                 input[type="text"]::placeholder,
                 textarea::placeholder {
-                    color: #939292ff;
+                    color: rgb(47, 47, 47);
                 }
 
                 textarea#message {
@@ -136,10 +137,11 @@
                 }
 
                 .subtitle {
-                    font-size: 12px;
+                    font-size: 15px;
                     text-transform: uppercase;
                     margin-bottom: 3%;
                     font-family: $font-SVG-gotham-book;
+                    line-height: 1.5;
                 }
 
                 .flower1 {
@@ -194,7 +196,7 @@
                     line-height: 1.5;
                     border-radius: 10px;
                     background: transparent;
-                    font-size: 11px;
+                    font-size: 14px;
                     color: $text-color;
                     outline: none;
                     border: 2px solid $text-color;
@@ -224,7 +226,7 @@
                 border: none;
                 border-radius: 8px;
                 font-weight: 600;
-                font-size: 12px;
+                font-size: 14px;
                 cursor: pointer;
                 text-transform: uppercase;
                 transition: background 0.3s ease;
@@ -247,7 +249,7 @@
             .rsvp-form {
                 .header {
                     .title {
-                        font-size: calc((29 / 525) * 100vw);
+                        font-size: calc((34 / 525) * 100vw);
 
                         i {
                             font-size: calc((22 / 525) * 100vw);
@@ -265,22 +267,22 @@
                     input[type="text"],
                     input[type="number"],
                     textarea {
-                        font-size: calc((12 / 525) * 100vw);
+                        font-size: calc((15 / 525) * 100vw);
                     }
 
                     .subtitle {
-                        font-size: calc((12 / 525) * 100vw);
+                        font-size: calc((15 / 525) * 100vw);
                     }
 
                     .form-select {
                         border-radius: calc((10 / 525) * 100vw);
-                        font-size: calc((11 / 525) * 100vw);
+                        font-size: calc((14 / 525) * 100vw);
                         background-size: calc((9 / 525) * 100vw);
                     }
                 }
 
                 .submit-btn {
-                    font-size: calc((12 / 525) * 100vw);
+                    font-size: calc((14 / 525) * 100vw);
                 }
             }
         }

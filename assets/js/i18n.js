@@ -12,8 +12,8 @@
    * ========================================================= */
   var translations = {
     vi: {
-      "invitation.groom_parents": "Nhà Trai: Ông Trần Đình Thái - Bà Trần Thị Minh Tuyết",
-      "invitation.bride_parents": "Nhà Gái: Ông Nguyễn Văn Dũng - Bà Từ Thị Hằng",
+      "invitation.groom_parents": "Nhà Trai: <br>Ông Trần Đình Thái<br>Bà Trần Thị Minh Tuyết",
+      "invitation.bride_parents": "Nhà Gái: <br> Ông Nguyễn Văn Dũng <br> Bà Từ Thị Hằng",
       "invitation.message":
         'TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH<br />ĐẾN THAM DỰ <strong>LỄ CƯỚI</strong> CỦA',
       "invitation.groom_name": 'Đình Phúc',
@@ -43,9 +43,9 @@
       "rsvp.namePlaceholder": 'Tên khách mời',
       "rsvp.phonePlaceholder": "SĐT",
       "rsvp.guests_number": 'Số lượng người tham dự',
-      "rsvp.confirmRelatedSubtitle": 'Quý Khách là người thân, bạn bè, đồng nghiệp của gia đình ... ?',
+      "rsvp.confirmRelatedSubtitle": 'Quý Khách là người thân, bạn bè,<br> đồng nghiệp của gia đình ... ?',
       "rsvp.confirmSubtitle":
-        'Quý Khách có thể đến chung vui cùng chúng tôi không?',
+        'Quý Khách có thể đến <br> chung vui cùng chúng tôi không?',
       "rsvp.yes": 'Chắc chắn tham dự',
       "rsvp.no": 'Rất tiếc không thể tham dự',
       "rsvp.guestsSubtitle": 'BẠN CÓ “TỆP ĐÍNH KÈM” CÙNG TỚI TIỆC CƯỚI KHÔNG? <br />',
@@ -65,8 +65,8 @@
       "quick_actions.rsvp": 'Phản hồi'
     },
     en: {
-      "invitation.groom_parents": "Groom's Family: Mr. Tran Dinh Thai - Mrs. Tran Thi Minh Tuyet",
-      "invitation.bride_parents": "Bride's Family: Mr. Nguyen Van Dung - Mrs. Tu Thi Hang",
+      "invitation.groom_parents": "Groom's Family: <br> Mr. Tran Dinh Thai <br> Mrs. Tran Thi Minh Tuyet",
+      "invitation.bride_parents": "Bride's Family: <br> Mr. Nguyen Van Dung <br> Mrs. Tu Thi Hang",
       "invitation.message":
         'Together with our families, we cordially invite you to celebrate our wedding at an intimate reception honoring <strong>the marriage</strong> of',
       "invitation.groom_name": 'Elias Tran',

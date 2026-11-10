@@ -42,35 +42,35 @@
                 width: 100%;
 
                 img {
-                    max-width: 42px;
+                    max-width: 46px;
                     width: 100%;
                     height: auto
                 }
             }
 
             .time {
-                letter-spacing: 1px;
                 @include flex-center;
-                // max-width: 75px;
                 width: 100%;
                 font-weight: 600;
                 text-align: center;
 
                 span {
                     font-family: $font-DFVNCatchyMager;
+                    font-size: 15px;
+                    letter-spacing: 1px;
                     padding: 6% 0 1%;
                     @include flex-center;
                     width: 100%;
                     height: 100%;
                     display: block;
                     line-height: 1;
-                    border-radius: 5px;
                 }
             }
 
             .label {
                 @include flex-center;
                 font-family: $font-lora;
+                font-size: 15px;
                 text-align: left;
                 margin-top: 5%;
                 text-align: center;
@@ -85,7 +85,7 @@
                 left: 28%;
 
                 .icon img {
-                    max-width: 54px;
+                    max-width: 60px;
                 }
 
             }
@@ -97,10 +97,10 @@
 
             &:nth-of-type(3) {
                 top: 42%;
-                left: 28%;
+                left: 27%;
 
                 .icon img {
-                    max-width: 44px;
+                    max-width: 48px;
                 }
             }
 
@@ -123,7 +123,7 @@
     .subtext {
         font-family: $font-SVG-gotham-book;
         font-style: italic;
-        font-size: 11px;
+        font-size: 14px;
         margin-top: 2%;
         padding: 0 10%;
 
@@ -201,19 +201,20 @@
 
                 .icon {
                     img {
-                        max-width: calc((42 / 525) * 100vw);
+                        max-width: calc((46 / 525) * 100vw);
                     }
                 }
 
                 .time {
-                    // max-width: calc((75 / 525) * 100vw);
-
                     span {
-                        border-radius: calc((5 / 525) * 100vw);
+                        font-size: calc((15 / 525) * 100vw);
+                        letter-spacing: calc((1 / 525) * 100vw);
                     }
                 }
 
                 .label {
+                    font-size: calc((15 / 525) * 100vw);
+
                     i {
                         font-size: calc((12 / 525) * 100vw);
                     }
@@ -221,13 +222,13 @@
 
                 &:nth-of-type(1) {
                     .icon img {
-                        max-width: calc((54 / 525) * 100vw);
+                        max-width: calc((60 / 525) * 100vw);
                     }
                 }
 
                 &:nth-of-type(3) {
                     .icon img {
-                        max-width: calc((44 / 525) * 100vw);
+                        max-width: calc((48 / 525) * 100vw);
                     }
                 }
 
@@ -240,7 +241,7 @@
         }
 
         .subtext {
-            font-size: calc((11 / 525) * 100vw);
+            font-size: calc((14 / 525) * 100vw);
         }
 
         .dresscode {

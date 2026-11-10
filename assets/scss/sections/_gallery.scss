@@ -3,6 +3,7 @@
 
 .gallery {
     width: 100%;
+    margin-bottom: 10%;
 
     .content {
         aspect-ratio: 500 / 500;
@@ -32,6 +33,16 @@
             }
         }
 
+        .subtext {
+            width: 100%;
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 28px;
+            font-family: $font-1FTVVIPAmsterdamSignature;
+        }
+
         @media (max-width: 525px) {
             .main {
                 max-width: calc((191 / 525) * 100vw);
@@ -43,6 +54,10 @@
                 &.image2 {
                     box-shadow: calc(12 / 525 * 100vw) calc(-4 / 525 * 100vw) $text-color;
                 }
+            }
+
+            .subtext {
+                font-size: calc((28 / 525) * 100vw);
             }
         }
     }
